@@ -1,0 +1,9 @@
+version: '3'
+services:
+    php:
+        restart: always
+        build: 
+            context: ./docker_setup/php
+        container_name: php
+        volumes:
+            - .:/usr/src:delegated
